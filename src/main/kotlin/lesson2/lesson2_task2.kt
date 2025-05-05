@@ -8,8 +8,9 @@ fun main() {
     val workersSummaryFee = numberOfWorkers * workerFee
     val internsSummaryFee = numberOfInterns * internFee
     val summaryFee = workersSummaryFee + internsSummaryFee
+    val medianFee = summaryFee / (numberOfWorkers + numberOfInterns)
 
     println(workersSummaryFee)
     println(summaryFee)
-    println(summaryFee / (numberOfWorkers + numberOfInterns))
+    println(medianFee)
 }
