@@ -2,13 +2,10 @@ package lesson3
 
 fun main() {
     val inputString = "D2-D4;0"
-    val moveTo = inputString.substringBefore('-')
-    val moveFrom = inputString
-        .substringAfter('-')
-        .substringBefore(';')
-    val moveNumber = inputString
-        .substringAfter(';')
-        .toInt()
+    val inputStringArray = inputString.split('-', ';')
+    val moveTo = inputStringArray[0]
+    val moveFrom = inputStringArray[1]
+    val moveNumber = inputStringArray[2].toInt()
 
     println(moveTo)
     println(moveFrom)
